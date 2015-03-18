@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol HUDDelegate <NSObject>
+
+
+@end
+
 @interface HUDViewController : UIViewController
+@property id<HUDDelegate> delegate;
 
 @end

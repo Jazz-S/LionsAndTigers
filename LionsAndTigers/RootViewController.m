@@ -7,8 +7,12 @@
 //
 
 #import "RootViewController.h"
+#import "TopViewController.h"
+#import "HUDViewController.h"
 
-@interface RootViewController ()
+@interface RootViewController () <TopDelegate, HUDDelegate>
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewConstraint;
+@property NSMutableArray *photosArray;
 
 @end
 
@@ -16,12 +20,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.photosArray = [NSMutableArray new];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)topRevealButtonTapped:(UIButton *)button{
+    self.topViewConstraint.constant = 100;
 }
+
+
 
 @end

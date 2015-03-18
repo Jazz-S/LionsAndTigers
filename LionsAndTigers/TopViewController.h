@@ -13,6 +13,6 @@
 
 @end
 @interface TopViewController : UIViewController
-
+@property id<TopDelegate> delegate;
 
 @end

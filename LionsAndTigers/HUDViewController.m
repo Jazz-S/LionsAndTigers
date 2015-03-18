@@ -14,6 +14,12 @@
 @end
 
 @implementation HUDViewController
+- (IBAction)lionsButtonTapped:(UIButton *)sender {
+    [self.delegate lionsButtonTapped:sender];
+}
+- (IBAction)tigersButtonTapped:(UIButton *)sender {
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
