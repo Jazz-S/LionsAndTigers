@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @protocol HUDDelegate <NSObject>
-
-
+-(void)shouldDisplayLions:(UIButton *)button;
+-(void)shouldDisplayTigers:(UIButton *)button;
 @end
 
 @interface HUDViewController : UIViewController

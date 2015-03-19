@@ -14,10 +14,13 @@
 @end
 
 @implementation HUDViewController
-- (IBAction)lionsButtonTapped:(UIButton *)sender {
-    [self.delegate lionsButtonTapped:sender];
+- (IBAction)lionsButtonTapped:(UIButton *)sender
+{
+    [self.delegate shouldDisplayLions:sender];
 }
-- (IBAction)tigersButtonTapped:(UIButton *)sender {
+- (IBAction)tigersButtonTapped:(UIButton *)sender
+{
+    [self.delegate shouldDisplayTigers:sender];
 }
 
 

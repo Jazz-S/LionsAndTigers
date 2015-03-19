@@ -26,8 +26,29 @@
 
 -(void)topRevealButtonTapped:(UIButton *)button{
     self.topViewConstraint.constant = 100;
+    NSLog(@"tapped");
 }
+-(void)shouldDisplayLions:(UIButton *)button
+{
 
+}
+-(void)shouldDisplayTigers:(UIButton *)button;
+{
+
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    UINavigationController *nav = segue.destinationViewController;
+    UIViewController *vc = nav.viewControllers[0];
+    if ([vc isKindOfClass: [TopViewController class]]) {
+        TopViewController *topVC = (TopViewController *)vc;
+        topVC.delegate = self;
+    } else
+    {
+        HUDViewController *hudVC = (HUDViewController *)vc;
+        hudVC.delegate = self;
+    }
+}
 
 
 @end
