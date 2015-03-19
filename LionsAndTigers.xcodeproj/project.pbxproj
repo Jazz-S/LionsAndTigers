@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E8070161ABA2D1100DB2CCA /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8070151ABA2D1100DB2CCA /* CustomCollectionViewCell.m */; };
+		9ED1E9681ABA65C90006A8E8 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED1E9671ABA65C90006A8E8 /* CollectionViewController.m */; };
+		9ED1E96B1ABA66C60006A8E8 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED1E96A1ABA66C60006A8E8 /* CollectionViewCell.m */; };
+		9ED1E96E1ABA7D720006A8E8 /* CollectionTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED1E96D1ABA7D720006A8E8 /* CollectionTableView.m */; };
 		E10806791ABA1DDA00E42BC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E10806781ABA1DDA00E42BC3 /* main.m */; };
 		E108067C1ABA1DDA00E42BC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E108067B1ABA1DDA00E42BC3 /* AppDelegate.m */; };
 		E108067F1ABA1DDA00E42BC3 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E108067E1ABA1DDA00E42BC3 /* RootViewController.m */; };
@@ -30,8 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9E8070141ABA2D1100DB2CCA /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
-		9E8070151ABA2D1100DB2CCA /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
+		9ED1E9661ABA65C90006A8E8 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewController.h; path = ../CollectionViewController.h; sourceTree = "<group>"; };
+		9ED1E9671ABA65C90006A8E8 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewController.m; path = ../CollectionViewController.m; sourceTree = "<group>"; };
+		9ED1E9691ABA66C60006A8E8 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		9ED1E96A1ABA66C60006A8E8 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		9ED1E96C1ABA7D720006A8E8 /* CollectionTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionTableView.h; sourceTree = "<group>"; };
+		9ED1E96D1ABA7D720006A8E8 /* CollectionTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionTableView.m; sourceTree = "<group>"; };
 		E10806731ABA1DDA00E42BC3 /* LionsAndTigers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LionsAndTigers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10806771ABA1DDA00E42BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E10806781ABA1DDA00E42BC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,9 +100,13 @@
 				E108067B1ABA1DDA00E42BC3 /* AppDelegate.m */,
 				E108067D1ABA1DDA00E42BC3 /* RootViewController.h */,
 				E108067E1ABA1DDA00E42BC3 /* RootViewController.m */,
+				9ED1E9661ABA65C90006A8E8 /* CollectionViewController.h */,
+				9ED1E9671ABA65C90006A8E8 /* CollectionViewController.m */,
+				9ED1E96C1ABA7D720006A8E8 /* CollectionTableView.h */,
+				9ED1E96D1ABA7D720006A8E8 /* CollectionTableView.m */,
 				E10806801ABA1DDA00E42BC3 /* Main.storyboard */,
-				9E8070141ABA2D1100DB2CCA /* CustomCollectionViewCell.h */,
-				9E8070151ABA2D1100DB2CCA /* CustomCollectionViewCell.m */,
+				9ED1E9691ABA66C60006A8E8 /* CollectionViewCell.h */,
+				9ED1E96A1ABA66C60006A8E8 /* CollectionViewCell.m */,
 				E108069C1ABA1FC400E42BC3 /* TopViewController.h */,
 				E108069D1ABA1FC400E42BC3 /* TopViewController.m */,
 				E108069F1ABA1FD800E42BC3 /* HUDViewController.h */,
@@ -236,10 +246,12 @@
 			files = (
 				E10806A11ABA1FD800E42BC3 /* HUDViewController.m in Sources */,
 				E108069E1ABA1FC400E42BC3 /* TopViewController.m in Sources */,
+				9ED1E9681ABA65C90006A8E8 /* CollectionViewController.m in Sources */,
 				E108067F1ABA1DDA00E42BC3 /* RootViewController.m in Sources */,
-				9E8070161ABA2D1100DB2CCA /* CustomCollectionViewCell.m in Sources */,
 				E108067C1ABA1DDA00E42BC3 /* AppDelegate.m in Sources */,
+				9ED1E96B1ABA66C60006A8E8 /* CollectionViewCell.m in Sources */,
 				E10806791ABA1DDA00E42BC3 /* main.m in Sources */,
+				9ED1E96E1ABA7D720006A8E8 /* CollectionTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

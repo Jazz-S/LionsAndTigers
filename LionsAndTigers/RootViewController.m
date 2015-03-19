@@ -9,7 +9,6 @@
 #import "RootViewController.h"
 #import "TopViewController.h"
 #import "HUDViewController.h"
-
 @interface RootViewController () <TopDelegate, HUDDelegate>
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewConstraint;
 @property NSMutableArray *photosArray;
@@ -20,16 +19,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.photosArray = [NSMutableArray new];
+    self.photosArray = [[NSMutableArray alloc]initWithObjects: [UIImage imageNamed:@"lion1@2x.png"],nil];
+    
     
 }
 
 -(void)topRevealButtonTapped:(UIButton *)button{
-    self.topViewConstraint.constant = 100;
+    if (self.topViewConstraint.constant == -16) {
+        self.topViewConstraint.constant = 100;
+    }
+    else
+    {
+        self.topViewConstraint.constant = -16;
+    }
+
     NSLog(@"tapped");
 }
 -(void)shouldDisplayLions:(UIButton *)button
 {
+    //NSArray *photosArray = [[photosArray alloc] initWithObjects:@"hi",@"hello", nil];
+//    NSLog(@"array content %@", self.photosArray);
 
 }
 -(void)shouldDisplayTigers:(UIButton *)button;
